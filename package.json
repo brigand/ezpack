@@ -1,0 +1,53 @@
+{
+  "name": "ezpack",
+  "version": "1.0.0",
+  "description": "zero config webpack builds for a variety of use cases",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "build": "babel src --out-dir lib",
+    "watch": "babel src --out-dir lib --watch"
+  },
+  "bin": {
+    "ezpack": "./lib/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brigand/ezpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "build",
+    "tool",
+    "client",
+    "react",
+    "node"
+  ],
+  "author": "Frankie Bagnardi <f.bagnardi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brigand/ezpack/issues"
+  },
+  "homepage": "https://github.com/brigand/ezpack",
+  "devDependencies": {
+    "babel-cli": "^6.3.17",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-1": "^6.3.13",
+    "express": "^4.13.3",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-dev-server": "^1.14.0"
+  },
+  "dependencies": {
+    "babel-core": "^6.3.21",
+    "babel-loader": "^6.2.0",
+    "babel-polyfill": "^6.3.14",
+    "css-loader": "^0.23.0",
+    "json-loader": "^0.5.4",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "node-sass": "^3.4.2",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.9"
+  }
+}
